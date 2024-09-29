@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "anonymous-api-client-side-solution",
+    "id": "4fd44873-35f0-4e33-8abf-6f2c3b0aabf2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/anonymous-api.sppkg"
+  }
+}
