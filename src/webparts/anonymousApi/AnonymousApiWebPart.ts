@@ -21,7 +21,15 @@ export default class AnonymousApiWebPart extends BaseClientSideWebPart<IAnonymou
     const element: React.ReactElement<IAnonymousApiProps > = React.createElement(
       AnonymousApi,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        id: Response.id,
+        name:Response.name,
+        username:Response.username,
+        email: Response.email,
+        address: 'Street: ' + response.address.street +' Suite: ' + response.address.suite +' City: ' + response.address.city +' Zipcode: ' + response.address.zipcode,
+        phone: Response.phone,
+        website: Response.website,
+        company: 'Name: ' + response.company.name +' CatchPhrase: ' + response.company.catchPhrase +' BS: ' + response.company.bs
       }
     );
 
