@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/anonymousApi/AnonymousApiWebPart.manifest.json"
         }
       ]
+    },
+    "anonymous-api-2-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/anonymousApi2/AnonymousApi2WebPart.js",
+          "manifest": "./src/webparts/anonymousApi2/AnonymousApi2WebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "AnonymousApiWebPartStrings": "lib/webparts/anonymousApi/loc/{locale}.js"
+    "AnonymousApiWebPartStrings": "lib/webparts/anonymousApi/loc/{locale}.js",
+    "AnonymousApi2WebPartStrings": "lib/webparts/anonymousApi2/loc/{locale}.js"
   }
 }

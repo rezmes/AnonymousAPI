@@ -60,7 +60,7 @@ export default class AnonymousApiWebPart extends BaseClientSideWebPart<IAnonymou
   }
 
 private getUserDetails(): Promise<any> {
-  return this.context.httpClient.get(`https://jsonplaceholder.typicode.com/users/1`, HttpClient.configurations.v1).then((response: HttpClientResponse) => {
+  return this.context.httpClient.get(`https://jsonplaceholder.typicode.com/users/2`, HttpClient.configurations.v1).then((response: HttpClientResponse) => {
     return response.json();
   })
   .then(jsonResponse => {
