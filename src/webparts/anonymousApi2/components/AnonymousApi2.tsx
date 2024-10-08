@@ -71,6 +71,17 @@ export default class AnonymousApi2 extends React.Component<
     this.InvokeAPIAndSetDataIntoState();
   }
 
+  /**
+   * componentDidUpdate
+   */
+  public componentDidUpdate(
+    prevProps: IAnonymousApi2Props,
+    prevState: IAnonymosApi2State,
+    prevContext: any
+  ): void {
+    this.InvokeAPIAndSetDataIntoState();
+  }
+
   public render(): React.ReactElement<IAnonymousApi2Props> {
     return (
       <div className={styles.anonymousApi2}>
