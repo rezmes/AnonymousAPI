@@ -1,4 +1,4 @@
-export default interface IAnonymosApiState {
+export default interface IAnonymosApi2State {
   id: string;
   name: string;
   username: string;
